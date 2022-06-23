@@ -7,18 +7,22 @@ def notas(*num, sit=0):
         else:
             if num[i] > maior:
                 maior = num[i]
-                nota['Maior'] = maior
+            nota['Maior'] = maior
             if num[i] < menor:
                 menor = num[i]
-            nota['Menor'] = menor
+                nota['Menor'] = menor
         total += 1
         nota['Total'] = total
     for n in num:
         s += n
     nota['Média'] = s / total
+    if sit:
+        if nota['Média'] <= 6:
+            nota['Situação'] = "Ruim"
+        else:
+            nota['Situação'] = "Boa"
     return nota
 
 
-
-resp = notas(1, 2, 3, 4)
+resp = notas(10,7, 9, sit=True)
 print(resp)
