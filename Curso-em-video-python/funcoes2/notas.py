@@ -24,5 +24,5 @@ def notas(*num, sit=0):
     return nota
 
 
-resp = notas(10,7, 9, sit=True)
+resp = notas(10,7, 9,10, 1, 6, 6,sit=True)
 print(resp)
