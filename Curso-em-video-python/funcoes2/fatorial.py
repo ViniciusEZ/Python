@@ -12,10 +12,9 @@ def fat(p1=1, show=0):
     else:
         for c in range(p1, 0, -1):
             print(f"{c}", end='')
-            print(" x " if c > 1 else f" = {f}", end='')
+            print(" x " if c > 1 else f" = {f}", end=' ')
             f *= c
 
 
 user = int(input("Digite o número que deseja ver o fatorial: "))
 print(fat(user, show=True))
-help(fat)
