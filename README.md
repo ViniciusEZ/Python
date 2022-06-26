@@ -1,2 +1,2 @@
 # Python
-Todo meu conhecimento sobre Python
+All my knowledge of Python
