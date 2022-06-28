@@ -1,5 +1,3 @@
-from class3_composition import *
-
 cliente1 = Cliente('Vinicius', 18)
 cliente1.insere_endereco('Caieiras', 'SP')
 print(cliente1.nome)
