@@ -11,13 +11,12 @@ def duplicates(array):
             continue
         set1.add(n)
     for i in range(0, len(n_duplicates)):
-        for i2 in range(i+1, len(n_duplicates)):
-            if i == len(n_duplicates):
+        for i2 in range(i + 1, len(n_duplicates)):
+            if i2 == len(n_duplicates):
                 break
             if n_duplicates[i] == n_duplicates[i2]:
                 n_duplicates.remove(n_duplicates[i2])
     return n_duplicates
 
-print(duplicates([-2 ,6 ,1 ,-2 ,3 ,10 ,9 ,-2 ,3 ,-4 ,-8 ,-3 ,6 ,-2 ,0 ,6 ,0 ,-4]))
 
-
+print(duplicates([-2, 6, 1, -2, 3, 10, 9, -2, 3, -4, -8, -3, 6, -2, 0, 6, 0, -4]))
