@@ -2,8 +2,10 @@
 # within the range [x..y] (both ends included) that are divisible by k
 # .
 
-def divisible_count(x,y,k):
-    divisible = len([ndiv for ndiv in range(x, y+1) if ndiv % k == 0])
-    return divisible
+def divisible_count(x, y, k):
+    from math import floor
+    return y // k - (x - 1) // k
 
-print(divisible_count(6,11,2))
+
+print(divisible_count(6, 20, 2))
+print(round(2.57,0))
