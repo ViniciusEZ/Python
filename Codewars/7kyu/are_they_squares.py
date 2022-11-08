@@ -6,9 +6,10 @@ An empty array should return undefined / None / nil /false (for C). You can assu
 
 
 from typing import List
+from math import isqrt
 
-def is_square(arr: List) -> bool:
-    from math import isqrt
+
+def is_square(arr: List[int]) -> bool:
     if not arr:
         return None
     

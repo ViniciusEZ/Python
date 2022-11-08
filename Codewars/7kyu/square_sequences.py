@@ -5,7 +5,7 @@
 
 from typing import List
 
-def squares(x, n) -> int:
+def squares(x, n) -> List[int]:
     squares: List[int] = [x] if n >= 1 else []
     for i in range(1,n):
         squares.append(squares[-1]**2)
