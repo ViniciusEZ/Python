@@ -9,8 +9,8 @@ def squares(x, n) -> List[int]:
     squares: List[int] = [x] if n >= 1 else []
     for i in range(1,n):
         squares.append(squares[-1]**2)
-        
+             
     return squares
 
 
-print(squares(3, 3))
+print(squares(3, 4))
